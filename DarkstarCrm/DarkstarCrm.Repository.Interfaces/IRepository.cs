@@ -1,19 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Linq.Expressions;
+﻿using System.Collections.Generic;
 
 namespace DarkstarCrm.Repository.Interfaces
 {
-    public interface IRepository<T>  where T : class
+    public interface IRepository<T> where T : IBaseEntity
     {
-        IQueryable<T> FindBy(Expression<Func<T, bool>> filter);
-
-        IQueryable<T> GetAll();
-
-        T FindSingle(Expression<Func<T, bool>> filter);
-
-        void Add(T item);
-
-        void Remove(T item);
+        IEnumerable<T> GetAll();
+        T Get(int id);
+        void Insert(T entity);
+        void Update(T entity);
+        void Delete(T entity);
     }
 }

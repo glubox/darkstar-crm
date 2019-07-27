@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DarkstarCrm.Data\DarkstarCrm.Data.csproj" />
-    <ProjectReference Include="..\DarkstarCrm.Model.EF\DarkstarCrm.Model.EF.csproj" />
     <ProjectReference Include="..\DarkstarCrm.Repository.Interfaces\DarkstarCrm.Repository.Interfaces.csproj" />
   </ItemGroup>
 

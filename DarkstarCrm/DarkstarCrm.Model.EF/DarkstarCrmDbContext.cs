@@ -1,4 +1,4 @@
-﻿using DarkstarCrm.Core.Model;
+﻿using DarkstarCrm.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace DarkstarCrm.Model.EF
